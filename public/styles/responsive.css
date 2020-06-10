@@ -1,0 +1,86 @@
+@media(max-width: 900px) {
+    #page-home {
+        background-position-x: 70vw;
+    }
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #page-home header a {
+        margin: 30px 0 15px;
+        border: 3px solid var(--primary-color);
+        border-radius: 8px;
+        padding: 10px 20px;
+        transition: 400ms;
+    }
+    #page-home header a:hover {
+        background-color: #dddddd;
+    }
+    #page-home header a span {
+        width: 30px;
+    }
+    #page-home main {
+        align-items: center;
+    }
+    #page-search-results .cards {
+        grid-template-columns: 60%;
+        justify-content: center;
+    }
+    main .card img {
+        width: 100%;
+        height: 200px;
+    }
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+    #page-create-point .field-group .field+.field {
+        margin-left: 0;
+    }
+    form {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 1700px) {
+    #page-home {
+        background-position-x: 45vw;
+    }
+}
+
+@media (max-height: 760px) {
+    #page-home {
+        background-position-y: 200px;
+    }
+}
+
+@media(max-width: 480px) {
+    #modal .content {
+        max-width: 80%;
+    }
+}
+
+@media(max-width: 700px) {
+    .items-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    form legend {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    form legend span {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 540px) {
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
+    /* TODO: Os dados da entidade ficam cagados a partir de 500px
+    dados saem da tela */
+}
